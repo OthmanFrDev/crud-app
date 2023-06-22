@@ -1,6 +1,6 @@
 package dev.othmanfr.api.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class Todo {
-    private int id;
+    private Integer id;
     private String description;
-    private LocalDateTime createdAt;
+    private LocalDate createdAt;
     @Builder.Default
     private boolean isDone = false;
 }
